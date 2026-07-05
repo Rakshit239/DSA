@@ -1,0 +1,25 @@
+class Solution {
+public:
+    //swapnil
+    double myPow(double x, int nn) {
+        // big oh n using loop
+        double ans=1.0;
+        long long n = nn;
+        if(n<0){
+            n= -1*n;
+        }
+        while(n>0){
+            if(n%2!=0){
+                ans=ans*x;
+                n=n-1;
+            }else{
+                x=x*x;
+                n=n/2;
+            }
+        }
+        if(nn<0){
+            ans=(double)1/double(ans);
+        }
+        return ans;
+    }
+};
