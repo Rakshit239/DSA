@@ -10,9 +10,9 @@ class Solution {
 public:
     //swapnil
     void deleteNode(ListNode* node) {
-        // ListNode* delNode=node->next;
+        ListNode* delNode=node->next;
         node->val=node->next->val;
         node->next=node->next->next;
-        // delete delNode;
+        delete delNode;
     }
 };
