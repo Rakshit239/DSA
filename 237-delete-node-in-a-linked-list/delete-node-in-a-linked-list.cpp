@@ -8,6 +8,7 @@
  */
 class Solution {
 public:
+    //swapnil
     void deleteNode(ListNode* node) {
         ListNode* delNode=node->next;
         node->val=node->next->val;
