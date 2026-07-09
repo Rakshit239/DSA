@@ -16,6 +16,7 @@ class Solution {
         // Code Here
         Node* slow=head;
         Node* fast=head;
+        
         while(n--){
             fast=fast->next;
         }
@@ -23,12 +24,13 @@ class Solution {
             slow=slow->next;
             fast=fast->next;
         }
-        int  sum=0;
+        
+        int result=0;
         while(slow!=NULL){
-            sum+=slow->data;
+            result+=slow->data; 
             slow=slow->next;
         }
-        return sum;
         
+        return result;
     }
 };
