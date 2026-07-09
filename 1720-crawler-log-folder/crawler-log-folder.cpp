@@ -3,18 +3,14 @@ public:
     int minOperations(vector<string>& logs) {
         stack<string> st;
         for(int i=0;i<logs.size();i++){
-            // if(st.empty()){
-            //     st.push(logs[i]);
-            // }else{
+            
                 if(logs[i]=="../"){
-                    if(!st.empty())
+                    if(!st.empty()){
                         st.pop();
-                }else if(logs[i]=="./"){
-                    continue;
-                }else{
+                    }
+                }else if(logs[i]!="./"){
                     st.push(logs[i]);
                 }
-            // }
         }
         return st.size();
     }
