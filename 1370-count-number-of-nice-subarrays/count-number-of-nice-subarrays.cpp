@@ -11,7 +11,7 @@ public:
             if (nums[j] % 2 != 0)
                 odd++;
 
-            while (odd > k) {
+            while(odd > k) {
                 if (nums[i] % 2 != 0)
                     odd--;
                 i++;
