@@ -8,8 +8,10 @@ public:
         while(i<=j){
             if(arr[i]+arr[j]<=limit){
                 i++;
-            }
+                j--;
+            }else{
             j--;
+            }
             boat++;
         }
         return boat;
