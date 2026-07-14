@@ -7,13 +7,9 @@ public:
         int boat=0;
         while(i<=j){
             if(arr[i]+arr[j]<=limit){
-                // boat++;
                 i++;
-                j--;
-            }else{
-                // boat++;
-                j--;
             }
+            j--;
             boat++;
         }
         return boat;
