@@ -15,7 +15,7 @@ public:
         for(int num:deck){
             freq[num]++;
         }
-        int GCD;
+        int GCD=0;
         for(auto it:freq){
             GCD=gcd(GCD,it.second);
             if(GCD==1) return false;
