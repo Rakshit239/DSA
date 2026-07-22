@@ -41,6 +41,5 @@ public:
         vector<vector<string>> ans;
         nQuens(board,0,n,ans);
         return ans;
-
     }
 };
